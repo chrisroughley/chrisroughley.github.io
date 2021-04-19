@@ -1,0 +1,26 @@
+h1{
+  font-family: monospace;
+  color: darkgoldenrod;
+  font-size: 100px;
+}
+h2{
+  font-family: monospace;
+  font-size: 60px;
+  color: peru;
+}
+h3{
+  font-family: Source Code Pro;
+}
+p{
+  padding: 5%;
+  font-family: Source Code Pro;
+}
+.grid-center{
+  display: grid;
+  place-items: center;
+}
+.grid-right{
+  display: grid;
+  place-items: end;
+  margin: 0px 50px 0px 0px;
+}
