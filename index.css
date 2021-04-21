@@ -1,3 +1,6 @@
+html{
+  scroll-behavior: smooth;
+}
 h1{
   font-family: monospace;
   color: darkgoldenrod;
@@ -23,4 +26,26 @@ p{
   display: grid;
   place-items: end;
   margin: 0px 50px 0px 0px;
+}
+body::-webkit-scrollbar {
+    width: 16px;
+    height: 18px;
+}
+body::-webkit-scrollbar-thumb {
+    height: 6px;
+    width: 15px;
+    border: 4px solid rgba(0, 0, 0, 0);
+    background-clip: padding-box;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    background-color: rgba(146, 146, 146, 0.753);
+    
+}
+body::-webkit-scrollbar-button {
+    width: 0;
+    height: 0;
+    display: none;
+}
+body::-webkit-scrollbar-corner {
+    background-color: transparent;
 }
