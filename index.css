@@ -1,33 +1,6 @@
 html{
   scroll-behavior: smooth;
 }
-h1{
-  font-family: monospace;
-  color: darkgoldenrod;
-  font-size: 100px;
-}
-h2{
-  font-family: monospace;
-  font-size: 60px;
-  color: peru;
-}
-h3{
-  font-family: Source Code Pro;
-}
-
-p{
-  padding: 5%;
-  font-family: Source Code Pro;
-}
-.grid-center{
-  display: grid;
-  place-items: center;
-}
-.grid-right{
-  display: grid;
-  place-items: end;
-  margin: 0px 50px 0px 0px;
-}
 body::-webkit-scrollbar {
     width: 16px;
     height: 18px;
@@ -53,4 +26,13 @@ body::-webkit-scrollbar-button {
 }
 body::-webkit-scrollbar-corner {
     background-color: transparent;
+}
+
+.social-links{
+  position: fixed;
+  background-color: darkgreen;
+  justify-items: center;
+  bottom: 0px;
+  left: 40px;
+  width: 40px;
 }
