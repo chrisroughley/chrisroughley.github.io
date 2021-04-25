@@ -1,6 +1,36 @@
 html{
   scroll-behavior: smooth;
 }
+body{
+  background-color: rgb(26, 18, 51);
+  color: rgb(101, 123, 143);
+  font-family: monospace;
+}
+header{
+  position:fixed;
+  width: 100vw;
+  background-color: rgb(26, 18, 51);
+  top: 0;
+}
+ol li{
+  display: inline;
+  margin: 0px 5px 0px 5px;
+}
+h1{
+  font-size: 90px;
+  margin-bottom: 0px;
+}
+h2{
+  font-size: 80px;
+  margin-top: 0px;
+  color: rgb(205, 225, 243);
+}
+p{
+  font-size: 20px;
+}
+a{
+  font-size: 20px;
+}
 body::-webkit-scrollbar {
     width: 16px;
     height: 18px;
@@ -27,7 +57,6 @@ body::-webkit-scrollbar-button {
 body::-webkit-scrollbar-corner {
     background-color: transparent;
 }
-
 .social-links{
   position: fixed;
   background-color: darkgreen;
@@ -35,4 +64,18 @@ body::-webkit-scrollbar-corner {
   bottom: 0px;
   left: 40px;
   width: 40px;
+}
+.nav-bar{
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 5%;
+  font-size: 30px;
+}
+.nav-list{
+  display: flex;
+  align-items: center;
+}
+.section{
+  padding: 200px 7% 200px 7%;
+  height: 100vh;
 }
