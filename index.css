@@ -21,9 +21,15 @@ header{
 nav{
   background-color: rgba(26, 18, 51, 0.705);
 }
+ol{
+  margin: 10px 0px 10px 0px;
+}
 ol li{
   display: inline;
   margin: 0px 5px 0px 5px;
+}
+svg{
+  margin-bottom: 10px;
 }
 h1{
   font-size: 9rem;
@@ -84,10 +90,10 @@ body::-webkit-scrollbar-corner {
 }
 .social-links{
   position: fixed;
-  background-color: darkgreen;
+  background-color: #00640000;
   justify-items: center;
   bottom: 0px;
-  left: 40px;
+  left: 0px;
   width: 40px;
 }
 .nav-bar{
@@ -128,7 +134,4 @@ body::-webkit-scrollbar-corner {
   background-size: cover;
   overflow: hidden;
 }
-.project{
-  display: flex;
-  justify-content: flex-end;
-}
+
