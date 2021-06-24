@@ -6,7 +6,7 @@
   color: rgb(101, 123, 143);
 }
 body {
-  background-color: #1e1f1f;
+  background-color: #0a192f;
   margin: 0;
   height: 100%;
   width: 100%;
@@ -15,7 +15,7 @@ body {
 header {
   position: fixed;
   width: 100vw;
-  background-color: rgba(26, 18, 51, 0);
+  background-color: #0d213f57;
 
   top: 0;
 }
@@ -114,6 +114,11 @@ body::-webkit-scrollbar-corner {
 }
 .section {
   padding: 10% 10% 10% 10%;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .bg {
   display: flex;
