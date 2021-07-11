@@ -25,6 +25,7 @@ h1 {
   color: white;
   font-family: 'DM Serif Display', serif;
   font-size: 40px;
+  margin-bottom: 0px;
 }
 h2 {
   color: rgba(255, 255, 255, 0.801);
@@ -54,6 +55,7 @@ p {
   position: fixed;
   top: 0%;
   min-width: 100vw;
+  z-index: 1000;
 }
 .nav {
   /* background-color: cornflowerblue; */
@@ -66,7 +68,9 @@ p {
   margin-left: auto;
   margin-right: auto;
   display: block;
-  max-width: 70vw;
+  max-width: 1200px;
+  padding-left: 30px;
+  padding-right: 30px;
   /* background-color: rgba(255, 255, 255, 0.363); */
 }
 
@@ -76,6 +80,17 @@ p {
   justify-content: center;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+.brand-text {
+  font-size: 16px;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.849);
+  transition: 0.3s;
+}
+
+.brand-text:hover {
+  color: rgba(199, 199, 199, 0.753);
 }
 
 .nav-link {
@@ -88,22 +103,37 @@ p {
   color: rgba(255, 255, 255, 0.753);
   font-family: 'Inter', sans-serif;
   font-weight: 400;
+  transition: 0.3s;
 }
 
-.brand-text {
-  font-size: 16px;
-  font-weight: 900;
-  color: rgba(255, 255, 255, 0.849);
+.nav-link:hover {
+  color: rgba(199, 199, 199, 0.699);
 }
 
 .cv-link {
-  background-color: rgba(122, 164, 170, 0.84);
+  background-color: #002238;
+  padding-left: 30px;
+  padding-right: 30px;
   border-radius: 1px;
+  transition: 0.3s;
 }
 
+.cv-link:hover {
+  background-color: #013152;
+  color: rgb(255, 255, 255);
+}
+.intro-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 40%;
+  margin-top: 25px;
+  margin-bottom: 30px;
+}
+.hero-container {
+  height: 100vh;
+}
 .intro-heading {
-  margin-top: 60px;
-  margin-bottom: 60px;
   max-width: 350px;
 }
 
@@ -112,12 +142,12 @@ p {
 }
 
 .hero-image-container {
-  max-height: 60vh;
+  max-height: 60%;
 }
 
 .parallax {
   background-image: url(./iurie-glacialrivers-6.webp);
-  min-height: 60vh;
+  min-height: 60%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -163,15 +193,19 @@ p {
   transition: 0.4s;
 }
 .project1:hover {
-  /* background: linear-gradient(145deg, #1d2a4c, #182340); */
-  box-shadow: 20px 20px 40px #0a142ab9, -20px -20px 40px #0b152fc2;
+  transform: translate(0, -5px);
+
+  box-shadow: 25px 25px 40px #0a142ab9, -25px -25px 40px #0b152fc2;
 }
 .project2 {
   background-color: #043841;
+
   transition: 0.4s;
 }
 
 .project2:hover {
+  transform: translate(0, -5px);
+
   box-shadow: 20px 20px 40px #002729b9, -10px -10px 40px #01323898;
 }
 .project3 {
@@ -180,7 +214,9 @@ p {
 }
 
 .project3:hover {
-  box-shadow: 20px 20px 40px #0a1c2ab9, -20px -20px 40px #0b1e2fc2;
+  transform: translate(0, -5px);
+
+  box-shadow: 25px 25px 40px #0a1c2ab9, -25px -25px 40px #0b1e2fc2;
 }
 
 .project-content {
