@@ -4,6 +4,41 @@
 body {
   background-color: rgb(24, 24, 24);
   margin: 0;
+  -webkit-animation: fadein 5s;
+  -moz-animation: fadein 5s;
+  -ms-animation: fadein 5s;
+  -o-animation: fadein 5s;
+  animation: fadein 5s;
+}
+body::-webkit-scrollbar {
+  width: 16px;
+  height: 18px;
+  background-color: rgba(240, 248, 255, 0);
+}
+body::-webkit-scrollbar-track {
+  display: none;
+}
+body::-webkit-scrollbar-thumb {
+  height: 6px;
+  width: 15px;
+  border: 4px solid rgba(0, 0, 0, 0);
+  background-clip: padding-box;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  background-color: rgba(146, 146, 146, 0.445);
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(109, 109, 109, 0.479);
+}
+
+body::-webkit-scrollbar-button {
+  width: 0;
+  height: 0;
+  display: none;
+}
+body::-webkit-scrollbar-corner {
+  background-color: transparent;
 }
 .section {
   padding-top: 60px;
@@ -51,7 +86,7 @@ p {
   padding-top: 1px;
 }
 .nav-bar {
-  background-color: rgba(0, 0, 0, 0.753);
+  background-color: rgba(0, 0, 0, 0.767);
   position: fixed;
   top: 0%;
   min-width: 100vw;
@@ -71,9 +106,46 @@ p {
   max-width: 1200px;
   padding-left: 30px;
   padding-right: 30px;
-  /* background-color: rgba(255, 255, 255, 0.363); */
 }
 
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .brand {
   display: flex;
   flex-direction: column;
@@ -185,7 +257,7 @@ p {
   grid-template-columns: 3fr 4fr;
   margin-top: 30px;
 
-  min-height: 470px;
+  min-height: 450px;
 }
 
 .project1 {
@@ -227,6 +299,12 @@ p {
   font-family: 'Inter', sans-serif;
 }
 
+@media only screen and (max-width: 800px) {
+  .project-content {
+    padding: 30px;
+  }
+}
+
 .project-description {
   margin-top: 5px;
   color: rgba(255, 255, 255, 0.747);
@@ -265,4 +343,39 @@ p {
 
 .project-link {
   margin-right: 10px;
+}
+
+.contact-container {
+  min-height: 350px;
+}
+
+.contact-form {
+  background-color: rgb(243, 240, 236);
+  padding: 60px;
+}
+
+.input-boxes {
+  border-radius: 0px;
+  border-color: rgb(199, 199, 199);
+  border-width: 1px;
+  box-shadow: rgba(250, 235, 215, 0);
+  min-height: 40px;
+}
+
+.message-input {
+  width: 100%;
+  height: 150px;
+}
+
+.footer-section {
+  padding-top: 30px;
+  margin-bottom: 0px;
+}
+.footer-container {
+  width: 100%;
+  min-height: 300px;
+  background-color: #002238;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  color: white;
 }
