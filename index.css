@@ -373,7 +373,7 @@ p {
 }
 .footer-container {
   width: 100%;
-  min-height: 300px;
+  height: 300px;
   background-color: #002238;
   padding-top: 60px;
   padding-bottom: 60px;
