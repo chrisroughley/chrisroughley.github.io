@@ -242,6 +242,16 @@ textarea{
   background-size: cover;
 }
 
+@media only screen and (max-width: 800px) {
+  .parallax {
+    background-attachment: inherit;
+    min-height: 400px;
+  }
+  .hero-image-container {
+    max-height: 400px
+  }
+}
+
 .about-section {
   min-height: 50vh;
 }
@@ -272,10 +282,14 @@ textarea{
   display: grid;
   grid-template-columns: 3fr 4fr;
   margin-top: 30px;
-
   min-height: 450px;
 }
 
+@media only screen and (max-width: 800px) {
+  .project {
+    grid-template-columns: 1fr 0fr;
+  }
+}
 .project1 {
   background-color: rgb(5, 15, 47);
   transition: 0.4s;
@@ -344,8 +358,9 @@ textarea{
 }
 
 .frontend {
-  background-image: url(./frontend.jpg);
+  background-image: url(./Screenshot\ from\ 2021-08-17\ 17-01-27.png);
   background-size: cover;
+  background-position: left;
 }
 
 .final {
