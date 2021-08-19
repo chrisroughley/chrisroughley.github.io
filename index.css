@@ -2,7 +2,7 @@
   scroll-behavior: smooth;
 }
 body {
-  background-color: rgb(24, 24, 24);
+  background-color: rgb(19, 19, 19);
   margin: 0;
   -webkit-animation: fadein 5s;
   -moz-animation: fadein 5s;
@@ -54,24 +54,24 @@ header {
 a {
   font-size: 14px;
   text-decoration: none;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 h1 {
   color: white;
-  font-family: 'DM Serif Display', serif;
+  font-family: "DM Serif Display", serif;
   font-size: 40px;
   margin-bottom: 0px;
 }
 h2 {
   color: rgba(255, 255, 255, 0.801);
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   letter-spacing: 5px;
   text-transform: uppercase;
   font-size: 16px;
 }
 h3 {
   color: white;
-  font-family: 'DM Serif Display', serif;
+  font-family: "DM Serif Display", serif;
   font-size: 25px;
   margin-bottom: 5px;
 }
@@ -79,13 +79,13 @@ p {
   margin-top: 5px;
 }
 
-label{
-  font-family: 'Inter', sans-serif;
+label {
+  font-family: "Inter", sans-serif;
 }
 
-textarea{
+textarea {
   resize: none;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 14px;
 }
 
@@ -97,21 +97,32 @@ textarea{
 }
 .nav-bar {
   background-color: rgba(0, 0, 0, 0.767);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
   position: fixed;
   top: 0%;
   min-width: 100vw;
-  z-index: 1000;
+  z-index: 1;
 }
 .nav {
-  /* background-color: cornflowerblue; */
   padding-top: 15px;
   padding-bottom: 15px;
   margin-top: 4px;
 }
 
+.tester {
+  color: white;
+  display: none;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 @media only screen and (max-width: 800px) {
   .nav {
     display: none;
+  }
+  .tester {
+    display: block;
   }
 }
 
@@ -189,7 +200,7 @@ textarea{
   padding-left: 20px;
   padding-right: 20px;
   color: rgba(255, 255, 255, 0.753);
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   transition: 0.3s;
 }
@@ -202,7 +213,7 @@ textarea{
   background-color: #002238;
   padding-left: 30px;
   padding-right: 30px;
-  border-radius: 1px;
+  border-radius: 3px;
   transition: 0.3s;
 }
 
@@ -248,7 +259,7 @@ textarea{
     min-height: 400px;
   }
   .hero-image-container {
-    max-height: 400px
+    max-height: 400px;
   }
 }
 
@@ -271,7 +282,7 @@ textarea{
 
 .written-content {
   max-width: 450px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   color: rgba(255, 255, 255, 0.589);
   font-size: 14px;
   word-spacing: 3px;
@@ -326,7 +337,7 @@ textarea{
   flex-direction: column;
   padding: 60px;
   color: white;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 @media only screen and (max-width: 800px) {
@@ -341,7 +352,7 @@ textarea{
   font-size: 14px;
 }
 .project-title {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 
   margin-top: 5px;
   margin-bottom: 5px;
@@ -360,7 +371,7 @@ textarea{
 .frontend {
   background-image: url(./Screenshot\ from\ 2021-08-17\ 17-01-27.png);
   background-size: cover;
-  background-position: left;
+  background-position: center;
 }
 
 .final {
@@ -396,11 +407,11 @@ textarea{
   flex-direction: column;
 }
 
-.contact-header{
+.contact-header {
   color: black;
 }
 
-.contact-section-content{
+.contact-section-content {
   color: black;
   max-width: none;
   width: 100%;
@@ -417,16 +428,16 @@ textarea{
   margin-top: 10px;
   margin-bottom: 30px;
   padding-left: 10px;
-  padding-right: 10px; 
+  padding-right: 10px;
 }
 
-.input{
+.input {
   display: flex;
   flex-direction: column;
   width: 50%;
 }
 
-.name-email-container{
+.name-email-container {
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -441,12 +452,12 @@ textarea{
 }
 
 .submit-button {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   padding: 10px;
   color: white;
   border-radius: 5px;
   border-width: 0px;
-  background-color: rgb(0, 85, 155);
+  background-color: #00365a;
   width: 90px;
 }
 
@@ -466,17 +477,17 @@ textarea{
   align-content: center;
 }
 
-.footer-content{
+.footer-content {
   text-align: center;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
-.email{
+.email {
   color: rgba(255, 255, 255, 0.685);
   padding-top: 20px;
 }
 
-.socials{
+.socials {
   display: flex;
   justify-content: space-around;
   min-width: 200px;
