@@ -15,8 +15,8 @@
     </style>
   </head>
   <body>
-    <section class="nav-bar">
-      <div class="container">
+    <section id="nav" class="nav-bar hide">
+      <div class="header-container">
         <header>
           <div class="brand">
             <a class="brand-text" href="#">Chris Roughley</a>
@@ -35,7 +35,7 @@
       <div class="container intro-container">
         <div class="intro-heading">
           <h2>hey!</h2>
-          <h1>I'm Chris, a Trainee Software Developer</h1>
+          <h1 class="title">I'm Chris, a Trainee Software Developer</h1>
         </div>
       </div>
       <div class="hero-image-container parallax"></div>
@@ -214,16 +214,18 @@
           <form class="contact-form-fields">
             <div class="name-email-container">
               <div class="input">
-                <label for="name">Name</label>
-                <input type="text" class="input-boxes" />
+                <label for="name" class="form-labels" style="margin-right: 15px;">Name</label>
+                <input type="text" class="input-boxes" style="margin-right: 15px;"/>
               </div>
               <div class="input">
-                <label for="email">Email</label>
-                <input type="text" class="input-boxes" />
+                <label for="email" class="form-labels" style="margin-left: 15px;">Email</label>
+                <input type="text" class="input-boxes" style="margin-left: 15px;" required/>
               </div>
             </div>
-            <label for="message">Message</label>
-            <textarea type="text" class="input-boxes message-input"></textarea>
+            <div>
+              <label for="message" class="form-labels" >Message</label>
+              <textarea type="text" class="message-input" required></textarea>
+            </div>
             <button class="submit-button">Submit</button>
           </form>
         </div>
@@ -273,7 +275,6 @@
                 </a>
         </div>
         <p class="footer-content email">chris.roughley@ntlworld.com</p>
-
       </div>
     </section>
   </body>
