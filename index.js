@@ -33,6 +33,7 @@ window.addEventListener(
       hamburger.style.display = "none";
       cross.style.display = "none";
       navBar.style.height = "80px";
+      isOpen = false;
     } else {
       hamburger.style.display = "block";
     }
