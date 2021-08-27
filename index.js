@@ -53,6 +53,7 @@ let showMenu = function () {
 };
 
 let closeMenu = function () {
+  isOpen = false;
   mobileMenu.style.visibility = "hidden";
   navBar.style.height = "80px";
   hamburger.style.display = "block";
