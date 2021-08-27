@@ -19,7 +19,8 @@ body::-webkit-scrollbar {
   background-color: rgba(240, 248, 255, 0);
 }
 body::-webkit-scrollbar-track {
-  display: none;
+  /* display: none; */
+  background-color: rgba(0, 0, 0, 0);
 }
 body::-webkit-scrollbar-thumb {
   height: 6px;
@@ -313,16 +314,30 @@ textarea {
 @media only screen and (max-width: 800px) {
   .parallax {
     background-attachment: inherit;
-    min-height: 400px;
+    min-height: 50%;
   }
   .hero-image-container {
-    max-height: 400px;
+    max-height: 350px;
   }
   .title {
     font-size: 35px;
   }
   .intro-container {
     margin-top: 20px;
+  }
+  .hero-container {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 1) 35%,
+      rgba(15, 15, 15, 1) 100%
+    );
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .title {
+    font-size: 30px;
   }
 }
 
