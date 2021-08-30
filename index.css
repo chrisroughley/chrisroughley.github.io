@@ -78,9 +78,19 @@ h3 {
   color: white;
   font-family: "Inter", sans-serif;
   font-weight: 700;
-  font-size: 25px;
+  font-size: 30px;
   margin-bottom: 5px;
 }
+
+h4 {
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
 p {
   margin-top: 5px;
 }
@@ -393,6 +403,33 @@ textarea {
 .about-title {
   margin-top: 0px;
 }
+
+.northcoders {
+  font-weight: 900;
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.767);
+}
+
+.technology-icon {
+  margin: 5px;
+}
+
+.technologies-content {
+  margin-top: 60px;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.technologies {
+  margin-top: 10px;
+  max-width: 600px;
+  justify-content: space-evenly;
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .projects-container {
   margin-top: 80px;
 }
@@ -401,9 +438,14 @@ textarea {
   max-width: 450px;
   font-family: "Inter", sans-serif;
   color: rgba(255, 255, 255, 0.589);
-  font-size: 14px;
+  font-size: 15px;
   word-spacing: 3px;
   line-height: 20px;
+  padding-top: 10px;
+}
+
+.projects {
+  margin-top: 60px;
 }
 
 .project {
@@ -423,19 +465,16 @@ textarea {
   transition: 0.4s;
 }
 .project1:hover {
-  transform: translate(0, -5px);
-
+  transform: scale(1.02);
   box-shadow: 25px 25px 40px #0a142ab9, -25px -25px 40px #0b152fc2;
 }
 .project2 {
   background-color: #043841;
-
   transition: 0.4s;
 }
 
 .project2:hover {
-  transform: translate(0, -5px);
-
+  transform: scale(1.02);
   box-shadow: 20px 20px 40px #002729b9, -10px -10px 40px #01323898;
 }
 .project3 {
@@ -444,7 +483,7 @@ textarea {
 }
 
 .project3:hover {
-  transform: translate(0, -5px);
+  transform: scale(1.02);
 
   box-shadow: 25px 25px 40px #0a1c2ab9, -25px -25px 40px #0b1e2fc2;
 }
