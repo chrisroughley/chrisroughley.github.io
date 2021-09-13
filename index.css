@@ -352,7 +352,7 @@ textarea {
 }
 
 .parallax {
-  background-image: url(./iurie-glacialrivers-6.webp);
+  background-image: url(./images/parallaxImage.webp);
   min-height: 60%;
   background-attachment: fixed;
   background-position: center;
@@ -408,6 +408,10 @@ textarea {
   font-weight: 900;
   font-style: normal;
   color: rgba(255, 255, 255, 0.767);
+}
+
+.technologies-title {
+  margin-bottom: 20px;
 }
 
 .technology-icon {
@@ -520,12 +524,12 @@ textarea {
 }
 
 .backend {
-  background-image: url(./backend_API.jpg);
+  background-image: url(./images/backend.jpg);
   background-size: cover;
 }
 
 .frontend {
-  background-image: url(./Screenshot\ from\ 2021-08-17\ 17-01-27.png);
+  background-image: url(./images/frontend.png);
   background-size: cover;
   background-position: center;
 }
