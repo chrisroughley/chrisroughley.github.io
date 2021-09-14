@@ -1,8 +1,10 @@
-navBar = document.getElementById("nav");
-mobileMenu = document.getElementById("mobile-nav");
-body = document.body;
-hamburger = document.getElementById("hamburger");
-cross = document.getElementById("cross");
+const navBar = document.getElementById("nav");
+const mobileMenu = document.getElementById("mobile-nav");
+const body = document.body;
+const hamburger = document.getElementById("hamburger");
+const cross = document.getElementById("cross");
+const form = document.forms[0];
+const name = document.getElementById("name");
 
 let isOpen = false;
 
@@ -18,7 +20,6 @@ let myScrollFunc = function () {
 };
 
 let windowResize = function () {
-  console.log("rezise");
   if (window.innerWidth >= 800) {
     hamburger.style.display = "none";
     cross.style.display = "none";
@@ -28,7 +29,6 @@ let windowResize = function () {
 window.addEventListener(
   "resize",
   () => {
-    console.log(window.innerWidth);
     if (window.innerWidth >= 800) {
       hamburger.style.display = "none";
       cross.style.display = "none";
@@ -59,3 +59,11 @@ let closeMenu = function () {
   hamburger.style.display = "block";
   cross.style.display = "none";
 };
+
+const handleSubmit = function (e) {
+  console.log(name.value);
+  name.value = "";
+  e.preventDefault();
+};
+
+form.addEventListener("submit", handleSubmit);
