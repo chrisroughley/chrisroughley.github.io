@@ -61,6 +61,18 @@ let closeMenu = function () {
 };
 
 const handleSubmit = function (e) {
+  const _data = {
+    email: "testemail@test.com",
+    message: "test message",
+  };
+  fetch("https://portfolio-email-api-app.herokuapp.com/", {
+    method: "POST",
+    mode: "cors",
+    body: JSON.stringify(_data),
+    headers: {
+      "Content-Type": "application/json",
+    },
+  });
   console.log(name.value);
   name.value = "";
   e.preventDefault();
