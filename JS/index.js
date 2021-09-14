@@ -5,6 +5,8 @@ const hamburger = document.getElementById("hamburger");
 const cross = document.getElementById("cross");
 const form = document.forms[0];
 const name = document.getElementById("name");
+const email = document.getElementById("email");
+const message = document.getElementById("message");
 
 let isOpen = false;
 
@@ -62,8 +64,9 @@ let closeMenu = function () {
 
 const handleSubmit = function (e) {
   const _data = {
-    email: "testemail@test.com",
-    message: "test message",
+    name: name.value,
+    email: email.value,
+    message: message.value,
   };
   fetch("https://portfolio-email-api-app.herokuapp.com/", {
     method: "POST",
