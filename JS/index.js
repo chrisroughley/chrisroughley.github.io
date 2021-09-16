@@ -7,8 +7,10 @@ const form = document.forms[0];
 const name = document.getElementById("name");
 const email = document.getElementById("email");
 const message = document.getElementById("message");
+const submit = document.getElementById("submit");
 
 let isOpen = false;
+let hasSent = false;
 
 let myScrollFunc = function () {
   if (!isOpen) {
@@ -47,7 +49,6 @@ window.addEventListener("scroll", myScrollFunc);
 
 let showMenu = function () {
   isOpen = true;
-  console.log("hello");
   mobileMenu.style.visibility = "visible";
   navBar.style.height = "100vh";
   hamburger.style.display = "none";
@@ -68,17 +69,27 @@ const handleSubmit = function (e) {
     email: email.value,
     message: message.value,
   };
-  fetch("https://portfolio-email-api-app.herokuapp.com/", {
-    method: "POST",
-    mode: "cors",
-    body: JSON.stringify(_data),
-    headers: {
-      "Content-Type": "application/json",
-    },
-  });
-  console.log(name.value);
-  name.value = "";
   e.preventDefault();
+  if (!hasSent) {
+    fetch("https://portfolio-email-api-app.herokuapp.com/", {
+      method: "POST",
+      mode: "cors",
+      body: JSON.stringify(_data),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+    submit.style.backgroundColor = "#376e37";
+    submit.textContent = "Success!";
+    name.value = "";
+    email.value = "";
+    message.value = "";
+    hasSent = true;
+  } else {
+    window.alert(
+      "I've already received you're email. Want to send another? Give the page a quick refresh."
+    );
+  }
 };
 
 form.addEventListener("submit", handleSubmit);
